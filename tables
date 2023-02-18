@@ -1,0 +1,16 @@
+//program to print nth multiplication table
+#include<stdio.h>
+main()
+{
+	int n,m;
+	int mul;
+	printf("enter the value of n:");
+	scanf("%d",&n);
+	m=1;
+	while(m<=10)
+	{
+		printf("\n%d*%d=%d",n,m,(n*m));
+		m=m+1;
+	}
+	mul=n*m++;
+}

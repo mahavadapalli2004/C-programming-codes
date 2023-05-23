@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+	int age;
+	int baby,school,adult;
+	int count=0;
+	while(count<20)
+	{
+		printf("enter the age");
+		scanf("%d",&age);
+		if(age>=0 && age<=5)
+		baby++;
+		else if(age>=6 && age<=17)
+		school++;
+		else
+		adult++;
+		count++;
+	}
+	printf("baby age %d",baby);
+	printf("school age %d",school);
+	printf("adult age %d",adult);
+}

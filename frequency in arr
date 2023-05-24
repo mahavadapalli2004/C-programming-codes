@@ -1,0 +1,39 @@
+#include<stdio.h>
+main()
+{
+	int a[10],fre[10],i,j,count,n;
+	printf("enter the size");
+	scanf("%d",&n);
+	printf("enter the elements into array");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		fre[i]=-1;
+	}
+	for(i=0;i<n;i++)
+	{
+		count=1;
+		for(j=i+1;j<n;j++)
+		{
+			if(a[i]==a[j])
+			{
+				count++;
+			fre[j]=0;
+	
+	
+			}
+		}
+		if(fre[i]!=0)
+		{
+			fre[i]=count;
+		}
+	}
+	printf("frequency of array elements is\n");
+	for(i=0;i<n;i++)
+	{
+		if(fre[i]!=0)
+		{
+			printf("%d %d times \n",a[i],fre[i]);
+		}
+	}
+}
